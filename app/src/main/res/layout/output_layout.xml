@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment"
+                android:id="@+id/paymentTextView"
+                android:layout_column="0"
+                android:textSize="@dimen/abc_action_button_min_width_overflow_material"
+                android:textColor="#ab5e5e5e"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/totaltaxpaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/totaltaxpaidTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/total_tax_paid"
+                android:textColor="#04ccff"
+                android:lines="2"
+                android:layout_weight="0"
+                android:textSize="@dimen/abc_text_size_headline_material" />
+
+            <EditText
+                android:id="@+id/totaltaxpaidEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/abc_dialog_padding_top_material"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/totalTaxPaidDollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/dollar"
+                android:textColor="#360a2535"
+                android:lines="2"
+                android:layout_weight="0"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/totalinterestpaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/totalinterestpaidTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/total_interest_paid"
+                android:textColor="#04ccff"
+                android:lines="2"
+                android:layout_weight="0"
+                android:textSize="@dimen/abc_text_size_headline_material" />
+
+            <EditText
+                android:id="@+id/totalinterestpaidEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/abc_dialog_padding_top_material"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/totalinterestpaidDollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/dollar"
+                android:textColor="#360a2535"
+                android:lines="2"
+                android:layout_weight="0"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/monthlypayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/monthlypaymentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/monthly_payment"
+                android:textColor="#04ccff"
+                android:lines="2"
+                android:layout_weight="0"
+                android:textSize="@dimen/abc_text_size_headline_material" />
+
+            <EditText
+                android:id="@+id/monthlypaymentEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/abc_dialog_padding_top_material"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/monthlypaymentDollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/dollar"
+                android:textColor="#360a2535"
+                android:lines="2"
+                android:layout_weight="0"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/payoffdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/payoffdateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/pay_off_date"
+                android:textColor="#04ccff"
+                android:lines="2"
+                android:layout_weight="0"
+                android:textSize="@dimen/abc_text_size_headline_material" />
+
+            <EditText
+                android:id="@+id/payoffdateEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/abc_dialog_padding_top_material"
+                android:layout_weight="1" />
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>
